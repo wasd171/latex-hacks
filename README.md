@@ -9,3 +9,5 @@
 
 \end{document}
 ```
+
+It also provides some useful tips for Russian language and is intented to be used with XeLaTeX.
