@@ -19,6 +19,12 @@
 	% Use TeX ligatures, like ``something''
 	\defaultfontfeatures{Mapping=tex-text}
 
+	% The pack­age sup­ports the Text Com­pan­ion fonts, which pro­vide many text sym­bols (such as baht, bul­let, copy­right, mu­si­cal­note, onequar­ter, sec­tion, and yen), in the TS1 en­cod­ing.
+	\RequirePackage{textcomp}
+
+	% Pro­vides generic com­mands \de­gree, \cel­sius, \pert­hou­sand, \mi­cro and \ohm which work both in text and maths mode.
+	\RequirePackage{gensymb}
+
 % Handle Russian language properly
 	\newfontfamily{\cyrillicfont}{Helvetica}
 
@@ -108,3 +114,5 @@
 	\newcommand{\cmultirow}[3]{
 		{\multirow{#1}{#2}{\centering #3}}
 	}
+
+% Graphics packages
