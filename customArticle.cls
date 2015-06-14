@@ -161,3 +161,10 @@
 
 	% Set vertical spacing between paragraphs
 	\RequirePackage{parskip}
+
+% Custom options, feel free to change!
+	% Rows shall be higher, useful for formulae inside tables
+	\renewcommand{\arraystretch}{1.5}
+
+	% Sometimes you just need custom margins
+	\RequirePackage[left = 20mm, right = 20mm, top = 15mm, bottom = 15mm]{geometry}
