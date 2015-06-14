@@ -116,3 +116,14 @@
 	}
 
 % Graphics packages
+	% For including various image formats
+	\usepackage{graphicx}
+
+	% Im­proves the in­ter­face for defin­ing float­ing ob­jects such as fig­ures and ta­bles.
+	\usepackage{float}
+
+	% Al­lows fig­ures or ta­bles to have text wrapped around them.
+	\usepackage{wrapfig}
+
+	% Mod­i­fies the mar­gins and ro­tates the page con­tents but not the page num­ber. 
+	\usepackage{lscape}
