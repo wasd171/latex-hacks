@@ -91,18 +91,18 @@
 
 % Tables config
 	% Custom tables handling
-	\usepackage{booktabs}
+	\RequirePackage{booktabs}
 
 	% Set longtable enviroment, which allows display break in tables
-	\usepackage{longtable}
+	\RequirePackage{longtable}
 
 	% Set a new column type, which implements vertical centering and breaks
-	\usepackage{array}
+	\RequirePackage{array}
 	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 	% Allow multicolumns and multirows
-	\usepackage{multicol}
-	\usepackage{multirow}
+	\RequirePackage{multicol}
+	\RequirePackage{multirow}
 
 	% Multirow with horizontal centering
 	\newcommand{\cmultirow}[3]{
