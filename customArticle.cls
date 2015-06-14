@@ -13,6 +13,9 @@
 
 	\setmainfont{Helvetica}
 
+	% Sans-serif math font
+	\RequirePackage{arevmath}
+
 	% Use TeX ligatures, like ``something''
 	\defaultfontfeatures{Mapping=tex-text}
 
@@ -85,3 +88,23 @@
 
 	% Use nice surface integral signs like \oiint
 	\RequirePackage{esint}
+
+% Tables config
+	% Custom tables handling
+	\usepackage{booktabs}
+
+	% Set longtable enviroment, which allows display break in tables
+	\usepackage{longtable}
+
+	% Set a new column type, which implements vertical centering and breaks
+	\usepackage{array}
+	\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+	% Allow multicolumns and multirows
+	\usepackage{multicol}
+	\usepackage{multirow}
+
+	% Multirow with horizontal centering
+	\newcommand{\cmultirow}[3]{
+		{\multirow{#1}{#2}{\centering #3}}
+	}
