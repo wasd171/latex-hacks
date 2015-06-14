@@ -68,17 +68,17 @@
 	% Easy partial derivatives
 		% Partial derivative with constant #3
 		\newcommand{\partfrac}[3]{
-		\brround{ \frac{\partial #1}{\partial #2} }_{#3}
+			\brround{ \frac{\partial #1}{\partial #2} }_{#3}
 		}
 
 		% Partial derivative of a custom power
 		\newcommand{\pwrpartfrac}[4]{
-		\brround{ \frac{\partial^{#4} #1}{\partial #2^{#4}} }_{#3}
+			\brround{ \frac{\partial^{#4} #1}{\partial #2^{#4}} }_{#3}
 		}
 
 		% Partial derivative of variation
 		\newcommand{\dpartfrac}[3]{
-		\brround{ \frac{\delta #1}{\partial #2} }_{#3}
+			\brround{ \frac{\delta #1}{\partial #2} }_{#3}
 		}
 
 	% Use fancy vector signs
@@ -128,9 +128,9 @@
 	\RequirePackage{lscape}
 
 % Chemistry packages
-	\usepackage{chemfig}
+	\RequirePackage{chemfig}
 
-	%http://tex.stackexchange.com/questions/96633/how-to-draw-parentheses-inside-chemfig
+	% http://tex.stackexchange.com/questions/96633/how-to-draw-parentheses-inside-chemfig
 	\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
 
 	\def\makebraces(#1,#2)#3#4#5{%
@@ -151,3 +151,13 @@
 	      $};
 	  }
 	}
+
+% General packages
+	\RequirePackage[unicode]{hyperref}
+
+% Text formatting
+	% Allow LaTeX to stretch lines
+	\sloppy
+
+	% Set vertical spacing between paragraphs
+	\RequirePackage{parskip}
