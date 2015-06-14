@@ -81,7 +81,6 @@
 		\brround{ \frac{\delta #1}{\partial #2} }_{#3}
 		}
 
-	
 	% Use fancy vector signs
 	\RequirePackage{esvect}
 
@@ -127,3 +126,28 @@
 
 	% Mod­i­fies the mar­gins and ro­tates the page con­tents but not the page num­ber. 
 	\RequirePackage{lscape}
+
+% Chemistry packages
+	\usepackage{chemfig}
+
+	%http://tex.stackexchange.com/questions/96633/how-to-draw-parentheses-inside-chemfig
+	\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+
+	\def\makebraces(#1,#2)#3#4#5{%
+	  \edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+	  \edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+	  \chemmove{
+	    \node[at=(#4),yshift=(\delimvshift)]
+	      {$
+	       \left\delimleft
+	         \vrule height\delimhalfdim depth\delimhalfdim width0pt
+	       \right.
+	      $};
+	    \node[at=(#5),yshift=(\delimvshift)]
+	      {$
+	        \left.
+	          \vrule height\delimhalfdim depth\delimhalfdim width0pt
+	        \right\delimright_{\rlap{#3}}
+	      $};
+	  }
+	}
