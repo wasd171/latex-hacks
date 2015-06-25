@@ -171,3 +171,6 @@
 
 	% Sometimes you just need custom margins
 	\RequirePackage[left = 20mm, right = 20mm, top = 15mm, bottom = 15mm]{geometry}
+
+% Useful commands
+	\newcommand{\msu}{Московский государственный университет имени М.\,В.~Ломоносова}
