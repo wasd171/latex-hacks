@@ -30,6 +30,7 @@
 
 % Handle Russian language properly
 	\newfontfamily{\cyrillicfont}{Helvetica}
+	\newfontfamily{\cyrillicfonttt}{Courier New}
 
 	% Customizes lists
 	\RequirePackage{enumitem}
